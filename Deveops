@@ -1,0 +1,45 @@
+Hi Team,
+Here's a quick breakdown of the DevOps lifecycle - stages, the tools used at each, and real-world examples to make it stick.
+
+WHAT IS DEVOPS?
+DevOps bridges Development and Operations teams to deliver software faster, more reliably, and continuously - through automation, collaboration, and feedback loops.
+
+STAGES & DEVOPS TOOLS
+
+PLAN - Define what to build
+Tools : Jira, Azure DevOps Boards, Redmine, Trac, Trello, Asana, Monday.com, Linear, Notion
+e.g., A product team creates a sprint in Jira with 10 user stories for the new payment feature.
+
+CODE - Write and collaborate
+Tools : Git, GitHub, GitLab, Bitbucket, Azure Repos, Confluence, VS Code, IntelliJ
+e.g., Developers push feature branches to GitHub, Confluence stores the API design docs.
+
+BUILD - Compile and package the code
+Tools :  Maven, Gradle, sbt, npm, Webpack, Docker, Buildah, Bazel, Azure Pipelines
+e.g., Maven compiles the Java microservice, resolves dependencies, and packages it as a .jar file.
+
+TEST - Validate quality automatically
+Tools : JUnit, NUnit, xUnit, TestNG, Selenium, Cypress, Playwright, Postman, REST Assured, SonarQube, JMeter, k6
+e.g., JUnit runs 200 unit tests on every PR, Cypress runs end-to-end browser tests on the login flow.
+
+RELEASE - Trigger and manage deployments
+Tools : Jenkins, GitHub Actions, GitLab CI, Azure DevOps Pipelines, CircleCI, CodeShip, TeamCity, ArgoCD, Spinnaker
+e.g., Jenkins pipeline is triggered on merge to main → runs tests → builds Docker image → pushes to registry.
+
+DEPLOY - Ship to infrastructure
+Tools : Docker, Kubernetes, Helm, AWS (EKS/ECS), Azure (AKS/App Service), GCP (GKE/Cloud Run), DC/OS, Terraform, Pulumi
+e.g., Kubernetes rolls out the new Docker container to 3 replicas on AWS EKS with zero downtime.
+
+OPERATE - Manage running systems
+Tools :Ansible, Terraform, Puppet, Chef, SaltStack, Kubernetes, Helm, AWS Systems Manager, Azure Automation
+e.g., Ansible playbook auto-configures 50 new EC2 servers when the cluster scales up.
+
+MONITOR - Observe and alert
+Tools : Datadog, Prometheus, Grafana, Nagios, Splunk, ELK Stack, New Relic, Dynatrace, Azure Monitor, GCP Cloud Monitoring, PagerDuty, Matrix/Element
+e.g., Datadog alerts the on-call engineer when API error rate crosses 2%, Splunk logs are used for post-incident analysis.
+
+HOW IT ALL CONNECTS
+PLAN → CODE → BUILD → TEST → RELEASE → DEPLOY → OPERATE → MONITOR → (back to PLAN)
+This is the continuous loop. Monitor feeds insights back to planning, completing the cycle.
+
+Hope this gives a clear picture of the DevOps toolchain. Happy Learning.
